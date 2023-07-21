@@ -377,12 +377,12 @@ p {
 
     .princ-info .c-img-pc {
         width: 60vw;
-        height: 35vh;
+        
     }
 
     .princ-info .c-img-devices {
         width: 65vw;
-        height: 35vh;
+        
     }
 
 
@@ -471,7 +471,8 @@ p {
 
     .princ-info .c-img-pc {
         grid-area: img-pc;
-        width: 60vw;
+        width: 50vw;
+        height: auto;
         margin-bottom: 0vh;
         position: relative;
         right: 4vh;
@@ -684,13 +685,19 @@ p {
 }
 @media (min-width:1260px) {
 
+    .princ-info .info-pc {
+      
+        grid-template-columns: 50vw 1fr;
+    }
+
+
     .princ-info .info-pc .c-img-pc {
-        width: 55vw;
+        width: 50vw;
     }
 
     .princ-info .c-img-devices {
         width: 45vw;
-        height: 45vh;
+        height: auto;
         margin-top: 2vh;
     }
 
