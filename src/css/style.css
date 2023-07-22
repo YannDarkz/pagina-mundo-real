@@ -643,21 +643,6 @@ p {
 @media (min-width:1100px) {
 
     .princ-info .info-pc .c-img-pc {
-        width: 50vw;
-        height: 50vh;
-    }
-
-    .princ-info .c-img-devices {
-        width: 50vw;
-       
-        margin-top: 2vh;
-    }
-
-}
-
-@media (min-width:1100px) {
-
-    .princ-info .info-pc .c-img-pc {
         width: 55vw;
     }
 
