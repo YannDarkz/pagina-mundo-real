@@ -30,7 +30,8 @@ p {
     align-items: center;
     position: relative;
     margin-bottom: 10vh;
-    clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 84%, 80% 100%, 51% 100%, 21% 100%, 0 86%, 0% 35%, 0 0);
+    
+    /* clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 84%, 80% 100%, 51% 100%, 21% 100%, 0 86%, 0% 35%, 0 0); */
 }
 
 
@@ -407,12 +408,9 @@ transition: font-size 0.3s ease-in-out;
     }
 
     .c-header {
-        grid-area: header;
-        background: url(../images/bg-header-desktop.png)left top no-repeat;
+        background: url(../images/bg-header-desktop.png)no-repeat;
         background-size: 100% 70%;
-
-
-        background-color: #fff;
+        
     }
 
     .c-header .logo-header {
@@ -735,4 +733,19 @@ transition: font-size 0.3s ease-in-out;
         -webkit-transform: translateY(2em);
         
     }
+}
+
+/* ============ Responsive Container Modo Noturno ========= */
+@media (max-width:768px) {
+    .container-modo-noturno .btnNoturno,.btnDiurno {
+        width: 8vw ;
+    }
+}
+
+@media (max-width: 550px) {
+    
+    .container-modo-noturno .btnNoturno,.btnDiurno {
+        width: 10vw ;
+    }
+    
 }

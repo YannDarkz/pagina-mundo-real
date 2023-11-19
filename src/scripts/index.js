@@ -22,21 +22,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const modoNoturnoAtivo = corpo.classList.contains('noturno');
         console.log(modoNoturnoAtivo)
         
-        if (modoNoturnoAtivo === false) {
-            modoDiurnoToggle.classList.remove('none');
-            modoNoturnoToggle.classList.add('none');
-            corpo.classList.remove('diurno');  // Adicionei 'diurno' para verificar o modo diurno
-            corpo.classList.add('noturno');
+        if (modoNoturnoAtivo) {
+          modoNoturnoToggle.classList.remove('none')
+          modoDiurnoToggle.classList.add('none')
+          corpo.classList.add('diurno')
+          corpo.classList.remove('noturno')
+          
           } else {
-            modoNoturnoToggle.classList.remove('none');
-            modoDiurnoToggle.classList.add('none');
-            corpo.classList.remove('noturno');
-            corpo.classList.add('diurno');  // Removi 'diurno' para voltar ao modo noturno
-          }
+          modoNoturnoToggle.classList.add('none')
+          modoDiurnoToggle.classList.remove('none')
+          corpo.classList.add('noturno')
+          corpo.classList.remove('diurno')
 
-        
+          }      
         }
-
     });
         
 
