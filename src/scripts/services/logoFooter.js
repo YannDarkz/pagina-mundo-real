@@ -1,11 +1,11 @@
 
-    export function scrollToTop() {
-      window.scrollTo({
+ function scrollToTop() {
+window.scrollTo({
         top: 0,
         behavior: 'smooth' 
       });
     }
   
 
-  
+    export { scrollToTop }  
 
