@@ -1,4 +1,4 @@
-import { scrollToTop } from '/src/scripts/logoFooter.js';
+ import { scrollToTop } from '/src/scripts/services/logoFooter.js'
 
 document.addEventListener('DOMContentLoaded', () => {
     const modoNoturnoToggle = document.getElementById('btnNoturno');
