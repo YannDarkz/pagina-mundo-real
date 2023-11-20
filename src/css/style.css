@@ -88,48 +88,52 @@ p {
     width: 80vw;
     height: 5vh;
     border: 1px solid;
-
     color: #ffffff;
-
     transition: 0.3s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 
 .c-header .download-header .d-ios,
 .c-download .d-ios {
-    background: var(--Strong-Cyan-op);
-    border: 1px solid var(--Strong-Cyan);
-    border-bottom: 2px solid var(--Strong-Cyan);
-    border-top: 0;
-    transition: 0.3s ease-in-out;
+    background: var(--Strong-Cyan);
+    border: 0px solid ;
+    outline: 2px solid var(--Strong-Cyan);
+    outline-offset: -1px;
+    transition: all 550ms cubic-bezier(
+        .36,.63,.5,.73
+    );
+    
 }
 
 .c-header .download-header .d-ios:hover,
 .c-download .d-ios:hover {
-    border: none;
-
+    
+    outline-color: rgba(255, 255, 255, 0);
+    background: var(--Strong-Cyan-op);
+    outline-offset: 10px;
     box-shadow: 0rem 0rem, 0rem 0rem 0.7rem hsla(171, 66%, 44%, 0.9);
-    ;
+    
 }
 
 .c-header .download-header .d-mac,
 .c-download .d-mac {
 
-    background: var(--Light-Blue-op);
-    border: 1px solid var(--Light-Blue);
-    border-bottom: 2px solid var(--Light-Blue);
-    border-top: 0;
-    transition: 0.3s ease-in-out;
+    background: var(--Light-Blue);
+    border: 0px solid;
+    outline: 2px solid var(--Light-Blue);
+    outline-offset: -1px;
+    transition: all 550ms cubic-bezier(
+        .36,.63,.5,.73);
 
 }
 
 .c-header .download-header .d-mac:hover,
 .c-download .d-mac:hover {
-    border: none;
+    background: var(--Light-Blue-op);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 10px;
     box-shadow: 0rem 0rem, 0rem 0rem 1rem hsla(233, 100%, 69%, 0.9);
 
 }
@@ -285,6 +289,8 @@ p {
 .footer .logo-footer {
     width: 8vw;
     margin: 3vh 0 3vh 0;
+    animation: downarrow 0.6s infinite alternate ease-in-out;
+    cursor: pointer;
 }
 
 .footer .about-us {

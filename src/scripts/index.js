@@ -1,3 +1,4 @@
+import { scrollToTop } from '/src/scripts/logoFooter.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     const modoNoturnoToggle = document.getElementById('btnNoturno');
@@ -36,6 +37,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
           }      
         }
+    });
+
+    // =========== Evento na Logo Footer ===========
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const logoFooter = document.getElementById('logoFooter');
+      console.log(logoFooter)
+    
+      logoFooter.addEventListener('click', function () {
+        scrollToTop();
+      });
     });
         
 
